@@ -1,4 +1,5 @@
 --PROGRAM TO CALCULATE THE SQUARE ROOT
+set serveroutput on;
 DECLARE
     v_number    NUMBER := 5;
     v_square    NUMBER;
@@ -15,4 +16,5 @@ BEGIN
       
     DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
 END;
+
 /
